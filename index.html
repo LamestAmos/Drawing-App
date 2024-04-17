@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>Drawing App</title>
+  </head>
+  <body>
+    <div class="sidebar">
+      <span class="color">
+        <label for="color">Color:</label>
+        <input type="color" name="color" id="color" />
+      </span>
+
+      <span class="stroke" data-stroke="5">
+        <label for="stroke">Stroke:</label>
+        <input
+          type="range"
+          name="stroke"
+          id="stroke"
+          step="5"
+          min="5"
+          max="50"
+          value="5"
+        />
+      </span>
+
+      <span class="toolbox">
+        <input
+          type="checkbox"
+          name="tool"
+          id="freehand"
+          title="Free Hand"
+          checked
+        />
+        <input
+          type="checkbox"
+          name="tool"
+          id="straight"
+          title="Straight Line"
+        />
+        <input type="checkbox" name="tool" id="eraser" title="Eraser" />
+      </span>
+    </div>
+    <canvas></canvas>
+  </body>
+</html>

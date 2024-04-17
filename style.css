@@ -1,0 +1,28 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 1fr 10fr;
+  height: 100vh;
+  overflow: hidden;
+}
+
+canvas {
+  background-color: rgb(207, 207, 207);
+}
+
+.sidebar {
+  background-color: rgba(0, 0, 0, 0.75);
+  display: grid;
+  grid-template-rows: repeat(5, 1fr);
+}
+
+.sidebar * {
+  color: aliceblue;
+}
